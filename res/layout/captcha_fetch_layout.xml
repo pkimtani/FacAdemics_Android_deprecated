@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <requestFocus />
+
+    <ImageView
+        android:id="@+id/captchaImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subCode"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/captchaImage"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/subCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/captchaImageView"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/captcha" />
+
+    <EditText
+        android:id="@+id/captchaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subCode"
+        android:layout_below="@+id/subCode"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textCapCharacters" />
+
+</RelativeLayout>

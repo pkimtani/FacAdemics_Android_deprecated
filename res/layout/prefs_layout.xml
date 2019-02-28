@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/subjectCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/facultyID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subjectCode"
+        android:layout_below="@+id/subjectCode"
+        android:layout_marginTop="47dp"
+        android:text="@string/password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/subjectCode"
+        android:ems="10"
+        android:inputType="text" 
+        android:textStyle="italic" />
+    <requestFocus />
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/out"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:textStyle="italic" >
+        
+    </EditText>
+
+</RelativeLayout>
